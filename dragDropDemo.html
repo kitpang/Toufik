@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML5 - CSS3 &amp; JavaScript Lessons Activities</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <!-- Bootstrap CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- My Own CSS -->
+    <link rel="stylesheet" href="myCSSdemo.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <ul class="nav nav-pills nav-justified">
+                <li data-target="#myCarousel" data-slide-to="0" class="active mobM adjust"><a href="#">Home</a></li>
+                <li class="mobM" data-target="#myCarousel" data-slide-to="1"><a href="#">Activity 1</a></li>
+                <li id="checkR" class="myReset mobM"><a href="#">Reset</a></li>
+            </ul>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+
+                    <div class="jumbotron">
+
+                        <div class="myHeadings">
+                            <h1>HTML5 CSS3 &amp; JavaScript Activities</h1><br> In this activities, you will match the ANSWERS with the correct QUESTIONS.<br>This is a Drag and Drop activity and your answer will be highlighted in BLUE if is CORRECT!
+                        </div>
+                        <div class="mainContainer">
+                            <div class="row">
+                                <div class="col-md-12 welcomeText">
+                                    Welcome!
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item -->
+                <div class="item">
+
+                    <div class="jumbotron">
+
+                        <div class="mainContainer">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>
+                                        <span class="qN">1. </span>A technology that allows greater style definition and formatting control of HTML elements </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <p id="a1" class="answersC" ondrop="dragDrop(event)" ondragover="dragOver(event)"></p>
+                                </div>
+                                <div id="r1" name="answers" class="col-md-3 sqHolder" ondrop="dragDrop(event)" ondragover="dragOver(event)">
+                                    <p id="1" value="6" class="theAnswers" draggable="true" ondragstart="dragStart(event)">offline storage</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>
+                                        <span class="qN">2. </span>An HTML5 element used to define portion of a document or group of other elements </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <p id="a2" class="answersC" ondrop="dragDrop(event)" ondragover="dragOver(event)"></p>
+                                </div>
+                                <div id="r2" name="answers" class="col-md-3 sqHolder" ondrop="dragDrop(event)" ondragover="dragOver(event)">
+                                    <p id="2" value="4" class="theAnswers" draggable="true" ondragstart="dragStart(event)">aside</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>
+                                        <span class="qN">3. </span>An HTML5 API used for rendering visual images on the fly by providing a bitmap area for scripts </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <p id="a3" class="answersC" ondrop="dragDrop(event)" ondragover="dragOver(event)"></p>
+                                </div>
+                                <div id="r3" name="answers" class="col-md-3 sqHolder" ondrop="dragDrop(event)" ondragover="dragOver(event)">
+                                    <p id="3" value="5" class="theAnswers" draggable="true" ondragstart="dragStart(event)">
+                                        geolocation</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>
+                                        <span class="qN">4. </span>An HTML5 element that contains content such as advertisements, highlighted resource links and other secondary content on a Web pag </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <p id="a4" class="answersC" ondrop="dragDrop(event)" ondragover="dragOver(event)"></p>
+                                </div>
+                                <div id="r4" name="answers" class="col-md-3 sqHolder" ondrop="dragDrop(event)" ondragover="dragOver(event)">
+                                    <p id="4" value="1" class="theAnswers" draggable="true" ondragstart="dragStart(event)">
+                                        CSS</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>
+                                        <span class="qN">5. </span>A technology that allows developers to retrieve the whereabouts of a Web site visitor </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <p id="a5" class="answersC" ondrop="dragDrop(event)" ondragover="dragOver(event)"></p>
+                                </div>
+                                <div id="r5" name="answers" class="col-md-3 sqHolder" ondrop="dragDrop(event)" ondragover="dragOver(event)">
+                                    <p id="5" value="7" class="theAnswers" draggable="true" ondragstart="dragStart(event)">
+                                        JavaScript</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>
+                                        <span class="qN">6. </span>The ability for Web browsers and online services to download and access content and services without being connected to the Internet </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <p id="a6" class="answersC" ondrop="dragDrop(event)" ondragover="dragOver(event)"></p>
+                                </div>
+                                <div id="r6" name="answers" class="col-md-3 sqHolder" ondrop="dragDrop(event)" ondragover="dragOver(event)">
+                                    <p id="6" value="8" class="theAnswers" draggable="true" ondragstart="dragStart(event)">
+                                        article</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>
+                                        <span class="qN">7. </span>A technology that provides dynamic, interactive capabilities to Web pages </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <p id="a7" class="answersC" ondrop="dragDrop(event)" ondragover="dragOver(event)"></p>
+                                </div>
+                                <div id="r7" name="answers" class="col-md-3 sqHolder" ondrop="dragDrop(event)" ondragover="dragOver(event)">
+                                    <p id="7" value="3" class="theAnswers" draggable="true" ondragstart="dragStart(event)">
+                                        Canvas</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>
+                                        <span class="qN">8. </span>An HTML5 element that contains main Web site content, such as company services, blogs, images and videos </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <p id="a8" class="answersC" ondrop="dragDrop(event)" ondragover="dragOver(event)"></p>
+                                </div>
+                                <div id="r8" name="answers" class="col-md-3 sqHolder" ondrop="dragDrop(event)" ondragover="dragOver(event)">
+                                    <p id="8" value="2" class="theAnswers" draggable="true" ondragstart="dragStart(event)">
+                                        Section</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item -->
+
+                <!-- End Item -->
+            </div>
+            <!-- End Carousel Inner -->
+
+        </div>
+        <!-- End Carousel -->
+
+
+        <div class="row footerR">
+
+            <div class="col-xs-12 col-md-10 col-md-offset-1 footerC">
+                <br><br>
+
+                <br><br>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="myJSdemo.js"></script>
+
+</body>
+
+</html>
